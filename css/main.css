@@ -1,0 +1,177 @@
+/* GENERAL CONFIGURATION */
+*{
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+    font-family: Jost;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('/font/jost.ttf');
+}
+
+:root{
+    --primary: #50FFB1;
+    --bg: #1E2124;
+    --bg_highlight: #282B30;
+    --grey: #292A2D;
+    --semi_white: #D9D9D9;
+}
+
+body{
+    background-color: var(--bg);
+    margin: 0 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+
+nav{
+    padding: 20px 0;
+}
+
+#page_title{
+    font-size: 30px;
+}
+
+#page_title span, .header span{
+    color: var(--primary);
+}
+
+nav ul{
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+nav ul li{
+    display: inline;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+/* ----- [ CONTAINER ] ----- */
+
+.container{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start, .end{
+    width: 50%;
+}
+
+.title{
+    font-size: 25px;
+    color: var(--primary);
+}
+
+/* ---/ start / */
+
+
+/* top */
+.start .top .header {
+    font-size: 40px;
+}
+
+.start .top .introduction {
+    font-size: 22px;
+}
+
+.start .top #details {
+    width: 85%;
+    color: var(--semi_white);
+}
+
+.start .bottom{
+    margin-top: 35px;
+}
+
+.start .bottom :nth-child(2){
+    color: var(--semi_white);
+}
+
+.start .bottom .content .exp{
+    margin: 10px 0;
+}
+
+.start .bottom .content .exp span{
+    display: block;
+}
+
+
+
+/* ---/ end / */
+
+.end{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.end .img_border {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 50% 5% 50% 5%;    
+}
+
+.end .img_border img{
+    width: 380px;
+    height: 380px;
+}
+
+.end .bottom{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.end .bottom .content{
+    margin-top: 25px;
+}
+
+
+.end .bottom .content ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.end .bottom .content ul li{
+    list-style: none;
+    padding: 10px 20px;
+    background-color: var(--bg_highlight);
+    margin: 0 10px 15px 10px;
+    border-radius: 25px;
+    display: table;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: auto;
+    padding: 0 0 20px 0;
+    bottom: 0;
+}
+
+footer > *{
+    color: var(--semi_white) !important;
+}
+
+footer .left{
+    font-size: 13px;
+}
+
+footer hr{
+    
+    border: 1px solid #292A2D;
+    margin: 20px 0;
+}

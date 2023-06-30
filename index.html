@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <span id="page_title"><a href="">Dev <span>Cha</span></a></span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Porfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="start">
+            <div class="top">
+                <span class="header">
+                    About Dev <span>Cha</span>
+                </span>
+                <p class="introduction">
+                    Hi there! I'm John, a backend PHP Developer <br> from Cebu, Philippines.
+                </p>
+                <br>
+                <p id="details">
+                    Developing an application has always been my passsion since I was highschool. I also dreamed to develop multi-platform games that suits my liking. Currently I worked as full-time back end web developer at Proweaver Philippines.
+                </p>
+            </div>
+            <div class="bottom">
+                <span class="title">
+                    Experience
+                </span>
+                <p>
+                    For the past few years, I've worked <br> with these awesome companies.
+                </p>
+                <br>
+                <div class="content">
+                    <p class="exp">
+                        <span class="sub_title">
+                            Intern System Programmer
+                        </span>
+                        <span class="company_loc">
+                            Cebu City Fire Station &#8212; Cebu, Philippines
+                        </span>
+                        <span class="date">
+                            Feb 2023 &#8211; Apr 2023
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="img_border">
+                <img src="/img/sample.png" alt="">
+            </div>
+            <div class="bottom">
+                <span class="title">
+                    Skills I Have
+                </span>
+                <div class="content">
+                    <ul>
+                        <a href=""><li>C#</li></a>
+                        <a href=""><li>Javascript</li></a>
+                        <a href=""><li>PHP</li></a>
+                        <a href=""><li>JQuery</li></a>
+                        <a href=""><li>Laravel</li></a>
+                        <a href=""><li>CSS</li></a>
+                        <a href=""><li>MySQL</li></a>
+                        <a href=""><li>Xamar.Android</li></a>             
+                        <a href=""><li>CodeIgniter</li></a>             
+                        <a href=""><li>Wordpress</li></a>        
+                        <a href=""><li>Java</li></a>        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="left">
+            &copy; <span id="year"></span> JOHN MIEL N. EMORICHA | ALL RIGHTS RESERVED.
+        </div>
+        <div class="right">
+
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        $(document).ready(function(){
+            const d = new Date();
+            let year = d.getFullYear();
+            $("#year").text(year);
+        });
+    </script>
+</body>
+</html>
