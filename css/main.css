@@ -168,9 +168,17 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.item img:hover{
+    width: 125% !important;
+    height: 105% !important;
+    z-index: 100;
 }
 
 .end .item img{
+    transition: .2s all;
     object-fit: cover;
     object-position: 60% 50%;
     width: 100%;
