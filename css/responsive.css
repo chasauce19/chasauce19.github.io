@@ -11,13 +11,22 @@
         margin: auto;
         padding: 50px;
     }
+
+    .end{
+        display: none;
+    }
+
+    .container{
+        justify-content: start;
+    }
 }
 
 
 @media only screen and (max-width: 775px) {
-    .start, .end{
+    .start {
         width: 100%;
     }
+    
 }
 
 @media only screen and (max-width: 510px) {
